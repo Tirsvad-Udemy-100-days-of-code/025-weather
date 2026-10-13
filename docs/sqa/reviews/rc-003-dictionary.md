@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [165e91a] |
 
 ---
 
@@ -65,3 +65,4 @@ Go — all Mandatory criteria pass or are not applicable. The rows above were as
 [QC-DICT-001]: ../../../framework/qc/artifacts/qc-dictionary.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [DICT-001]: ../../dictionary.md
+[165e91a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/165e91a0183c6351fbfdad53b050bb2918275e6d

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-001 (Go) | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-001 (Go) | [165e91a] |
 
 ---
 
@@ -178,3 +178,4 @@ Proceed — the work is small (two lectures, a handful of functions, tests, docu
 [MIL-003]: ./milestones/mil-003-pandas-analysis.md
 [MIL-004]: ./milestones/mil-004-create-and-export.md
 [MIL-005]: ./milestones/mil-005-screenshot-wiki-and-finish.md
+[165e91a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/165e91a0183c6351fbfdad53b050bb2918275e6d

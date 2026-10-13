@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; accepted by S01 (Product Owner) in chat on 2026-10-13 | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; accepted by S01 (Product Owner) in chat on 2026-10-13 | [165e91a] |
 
 ---
 
@@ -120,3 +120,4 @@ A No-Go on a gateway returns it to S01 for rework and moves every later date by 
 [MIL-003]: ./milestones/mil-003-pandas-analysis.md
 [MIL-004]: ./milestones/mil-004-create-and-export.md
 [MIL-005]: ./milestones/mil-005-screenshot-wiki-and-finish.md
+[165e91a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/165e91a0183c6351fbfdad53b050bb2918275e6d

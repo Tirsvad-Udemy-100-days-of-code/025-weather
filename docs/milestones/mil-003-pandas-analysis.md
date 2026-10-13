@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-006 (Go) | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-006 (Go) | [165e91a] |
 
 ---
 
@@ -81,3 +81,4 @@ This gate decides whether the pandas half of both lectures is delivered: the dat
 [BC-001]: ../business-case.md
 [PP-001]: ../project-plan.md
 [MIL-002]: ./mil-002-read-with-csv.md
+[165e91a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/165e91a0183c6351fbfdad53b050bb2918275e6d

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-002 (Go) | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version, reviewed in RC-002 (Go) | [165e91a] |
 
 ---
 
@@ -96,3 +96,4 @@ FURPS+ stands for Functionality, Usability, Reliability, Performance, Supportabi
 [PP-001]: ./project-plan.md
 [MIL-001]: ./milestones/mil-001-project-foundation.md
 [MIL-005]: ./milestones/mil-005-screenshot-wiki-and-finish.md
+[165e91a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/165e91a0183c6351fbfdad53b050bb2918275e6d
