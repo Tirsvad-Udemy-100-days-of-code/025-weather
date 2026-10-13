@@ -34,3 +34,18 @@ def test_fahrenheit_factors_give_the_lecture_formula() -> None:
 
 def test_exported_file_has_the_name_of_the_lecture() -> None:
     assert constants.EXPORT_FILE_NAME == "new_data.csv"
+
+
+def test_scores_table_has_the_columns_and_values_of_the_lecture() -> None:
+    assert constants.COLUMN_STUDENTS == "students"
+    assert constants.COLUMN_SCORES == "scores"
+    assert constants.STUDENTS == ("Amy", "James", "Angela")
+    assert constants.SCORES == (76, 56, 65)
+
+
+def test_main_flow_uses_monday() -> None:
+    assert constants.MONDAY == "Monday"
+
+
+def test_missing_pandas_message_names_the_extra() -> None:
+    assert 'pip install "weather[pandas]"' in constants.PANDAS_MISSING_MESSAGE

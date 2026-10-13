@@ -3,8 +3,9 @@
 #
 #  Every value that the day-25 lectures fix lives here, so that no other module
 #  contains a magic string or number: the name of the data file, the names of
-#  its columns, the factors of the Fahrenheit conversion and the name of the
-#  exported file.
+#  its columns, the factors of the Fahrenheit conversion, the name of the
+#  exported file, the table that is created from a dictionary and the message
+#  for a missing optional dependency.
 
 """Constants of the weather data project, as fixed by the day-25 lectures."""
 
@@ -46,3 +47,24 @@ FAHRENHEIT_DENOMINATOR: Final[int] = 5
 
 ## @brief Offset of the Celsius to Fahrenheit conversion: `temp * 9 / 5 + 32`.
 FAHRENHEIT_OFFSET: Final[int] = 32
+
+## @brief Name of the column that holds the student names of the lecture's table.
+COLUMN_STUDENTS: Final[str] = "students"
+
+## @brief Name of the column that holds the scores of the lecture's table.
+COLUMN_SCORES: Final[str] = "scores"
+
+## @brief Student names of the table that the lecture creates from a dictionary.
+STUDENTS: Final[tuple[str, ...]] = ("Amy", "James", "Angela")
+
+## @brief Scores of the students, in the order of `STUDENTS`.
+SCORES: Final[tuple[int, ...]] = (76, 56, 65)
+
+## @brief Name of the day that the main flow selects and converts.
+MONDAY: Final[str] = "Monday"
+
+## @brief Message printed when `pandas`, an optional extra, is not installed.
+PANDAS_MISSING_MESSAGE: Final[str] = (
+    "pandas is not installed; the pandas part needs the extra: "
+    'pip install "weather[pandas]"'
+)
