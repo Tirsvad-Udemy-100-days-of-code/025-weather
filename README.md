@@ -15,9 +15,14 @@ keeps the names of the lectures (`data`, `temperatures`, `temp_list`, `data_dict
 `average_temp`, `monday`, `to_dict`, `to_list`, `mean`, `max`, `to_csv`) so that you
 can compare it with your own solution.
 
-> **Status:** in progress. The project foundation (configuration, constants,
-> documentation settings and continuous integration) is in place; the readers and
-> the analysis follow in the next milestones, see `docs/project-plan.md`.
+![The program running in a terminal: the rows and temperatures read with the csv library, then the data frame, the dictionary, the list, the average 17.428571428571427, the maximum 24, the row of Monday, the hottest row Sunday, Monday in Fahrenheit 53.6 and the scores frame](docs/images/weather-run.png)
+
+*`python -m weather` in a terminal: the csv part first, then the pandas part.*
+
+> **Status:** finished. The `csv` reader, the `pandas` analysis, the creation and
+> export of a `DataFrame` and the program that prints the results are done. A short
+> description in English, Danish and Bahasa Melayu is on the wiki of the repository
+> (the pages are in `wiki/`).
 
 ## Requirements
 
@@ -81,13 +86,45 @@ To install only what the `csv` part needs, leave out the extras:
 
 ## Run
 
-With the virtual environment active, the program that prints the results of the
-lectures is added in a later milestone (`python -m weather`); until then the
-package can be imported:
+With the virtual environment active, print the results of the lectures:
 
 ```bash
-python -c "from weather import constants; print(constants.DATA_FILE)"
+python -m weather
 ```
+
+The program prints, in the order of the lectures:
+
+1. the rows of `weather_data.csv` and the temperatures as whole numbers, read with
+   the `csv` library (no `pandas` needed);
+2. the same file read with `pandas` as a `DataFrame`, converted to a dictionary and
+   a list;
+3. the average temperature, computed by hand and with `mean`, and the maximum;
+4. the row of Monday, the row of the hottest day, and Monday in Fahrenheit;
+5. a `DataFrame` created from a dictionary of students and scores.
+
+Nothing is written to disk unless you ask for it. To also export the scores table
+to a CSV file, give a path:
+
+```bash
+python -m weather --export new_data.csv
+```
+
+If `pandas` is not installed the `csv` part is still printed, a message names the
+extra to install, and the exit code is 1.
+
+The functions can also be used from your own code:
+
+```python
+from weather.csv_reader import read_temperatures
+from weather.analysis import read_data, average_temp, max_temp
+
+temperatures = read_temperatures()   # [12, 14, 15, 14, 21, 22, 24]
+data = read_data()                   # a pandas DataFrame
+print(average_temp(data), max_temp(data))
+```
+
+The default data file is the `weather_data.csv` inside the package, so the
+functions work from any folder; pass a `path` to read another file.
 
 ## Run the tests
 
@@ -134,12 +171,18 @@ The HTML is written to `build/doxygen/index.html`. A warning fails the build.
 ```text
 .
 ├── .gitea/workflows/ci.yml    continuous integration (Gitea Actions)
-├── docs/                      business case, plan, milestones, reviews
+├── docs/                      business case, plan, milestones, reviews, screenshot
 ├── src/weather/               the package
 │   ├── __init__.py
-│   └── constants.py           every constant of the lectures
+│   ├── __main__.py            prints the results: python -m weather
+│   ├── analysis.py            read_data, average_temp, max_temp, row selection (pandas)
+│   ├── constants.py           every constant of the lectures
+│   ├── csv_reader.py          read_rows and read_temperatures (csv library)
+│   ├── export.py              create_scores_frame and export_frame (pandas)
+│   └── weather_data.csv       the weather data of the lecture
 ├── tests/                     pytest tests (conftest.py runs every test in a
 │                              temporary folder)
+├── wiki/                      wiki pages in English, Danish and Bahasa Melayu
 ├── Doxyfile                   source documentation settings
 ├── LICENSE
 ├── pyproject.toml             project configuration
