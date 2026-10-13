@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [38867cc] |
 
 ---
 
@@ -58,3 +58,4 @@ Go — all Mandatory criteria pass or are not applicable. Assessed on 2026-10-13
 [MIL-001]: ../../milestones/mil-001-project-foundation.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [PP-001]: ../../project-plan.md
+[38867cc]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/38867cccd1f04cba39283b1300bcbdcff68d9724
