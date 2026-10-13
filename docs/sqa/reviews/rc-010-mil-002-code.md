@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [ff6d1b2] |
 
 ---
 
@@ -58,3 +58,4 @@ Go — all Mandatory criteria pass or are not applicable. Assessed on 2026-10-13
 [MIL-002]: ../../milestones/mil-002-read-with-csv.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [PP-001]: ../../project-plan.md
+[ff6d1b2]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/025-weather/commit/ff6d1b29c58da4a83c5973a70d36dd5ee5283034
