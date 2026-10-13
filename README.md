@@ -22,7 +22,7 @@ can compare it with your own solution.
 > **Status:** finished. The `csv` reader, the `pandas` analysis, the creation and
 > export of a `DataFrame` and the program that prints the results are done. A short
 > description in English, Danish and Bahasa Melayu is on the wiki of the repository
-> (the pages are in `wiki/`).
+> (the pages are in `docs/wiki/`).
 
 ## Requirements
 
@@ -182,7 +182,7 @@ The HTML is written to `build/doxygen/index.html`. A warning fails the build.
 │   └── weather_data.csv       the weather data of the lecture
 ├── tests/                     pytest tests (conftest.py runs every test in a
 │                              temporary folder)
-├── wiki/                      wiki pages in English, Danish and Bahasa Melayu
+├── docs/wiki/                 wiki pages in English, Danish and Bahasa Melayu
 ├── Doxyfile                   source documentation settings
 ├── LICENSE
 ├── pyproject.toml             project configuration
